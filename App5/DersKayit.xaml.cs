@@ -39,7 +39,7 @@ namespace App5
         void Brans_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             string comm = $@"SELECT DersHocasi from Dersler WHERE DersAdi = '{Brans.SelectedItem.ToString()}'";
-            Dictionary<string, List<string>> names = HelperFunctionss.Sqldeneme(comm);
+            Dictionary<string, List<string>> names = HelperFunctionss.Sqlreaderexecuter(comm);
             HelperFunctionss.Pickeradjuster(Hocalar, names,"DersHocasi");
             Gun.SelectedIndex = -1;     
             Gun.Items.Clear();
@@ -54,7 +54,7 @@ namespace App5
                 string comm = $@"SELECT DersGünü from Dersler 
                 WHERE DersAdi = '{Brans.SelectedItem.ToString()}' 
                 and DersHocasi = '{Hocalar.SelectedItem.ToString()}'";
-                Dictionary<string, List<string>> names = HelperFunctionss.Sqldeneme(comm);
+                Dictionary<string, List<string>> names = HelperFunctionss.Sqlreaderexecuter(comm);
                 HelperFunctionss.Pickeradjuster(Gun, names, "DersGünü");
                 Grid.IsVisible = false;
             }
@@ -83,7 +83,7 @@ namespace App5
                     WHERE DersAdi = '{Brans.SelectedItem.ToString()}' 
                     and DersHocasi = '{Hocalar.SelectedItem.ToString()}' 
                     and DersGünü = '{Gun.SelectedItem.ToString()}'";
-                    Dictionary<string, List<string>> table = HelperFunctionss.Sqldeneme(comm);
+                    Dictionary<string, List<string>> table = HelperFunctionss.Sqlreaderexecuter(comm);
                     Person person1 = JsonConvert.DeserializeObject<Person>(Settings.GeneralSettings);
                     comm = $@"SELECT Personid from Kisiler where kullaniciadi = '{person1.Username}'";
                     string studid = HelperFunctionss.SqlExecuter(comm, 1);
@@ -93,7 +93,7 @@ namespace App5
                               where derskayit.student_id = '{studid}' AND Dersler.DersAdi = '{Brans.SelectedItem.ToString()}' 
                               and Dersler.DersHocasi = '{Hocalar.SelectedItem.ToString()}' 
                               and DersGünü = '{Gun.SelectedItem.ToString()}';";
-                    Dictionary<string, List<string>> kayitlitimes = HelperFunctionss.Sqldeneme(comm);
+                    Dictionary<string, List<string>> kayitlitimes = HelperFunctionss.Sqlreaderexecuter(comm);
                     
                     DersGunu.Text = Gun.SelectedItem.ToString();
                     Grid.IsVisible = true;

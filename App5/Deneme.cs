@@ -23,7 +23,7 @@ namespace App5
         }
 
 
-        public static Dictionary<string, List<string>> Sqldeneme(string commstring)
+        public static Dictionary<string, List<string>> Sqlreaderexecuter(string commstring)
         {
             using (SqlConnection conne = new SqlConnection(Configuration.ConnectionString))
             {

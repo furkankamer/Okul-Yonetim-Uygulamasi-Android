@@ -7,26 +7,25 @@
              x:Class="App5.DersOlustur">
     <ContentPage.Content>
         <StackLayout>
-            <!--   
+            
             <StackLayout VerticalOptions="FillAndExpand">
                 <Picker x:Name="Brans"
          IsEnabled="true"
-        Title="Bir Brans Secin"
+        Title="Bir Brans Seçiniz"
         TitleColor="Red"
         SelectedIndexChanged="Brans_SelectedIndexChanged"/>
                 <Picker x:Name="Hocalar"
                     IsEnabled="false"
-        Title="Bir Hoca Secin"
+        Title="Bir Hoca Seçiniz"
         TitleColor="Red"
         SelectedIndexChanged="Hocalar_SelectedIndexChanged"/>
                 <Picker x:Name="Gun"
                     IsEnabled="false"
-        Title="Gun Secin"
-        TitleColor="Red"
-        SelectedIndexChanged="Gun_SelectedIndexChanged"/>
-                <Button x:Name="Ara" IsVisible="True"  Text="Ara" Clicked="Button7_Clicked" />
+        Title="Gün Seçiniz"
+        TitleColor="Red"/>
+                <Button x:Name="Olustur" IsVisible="True"  Text="Olustur" Clicked="Ders_Olustur" />
                 
-            </StackLayout> -->
+            </StackLayout>
             <Button x:Name="geri" IsVisible="True"  Text="Ana Menu" Clicked="Button6_Clicked" />
             <Button x:Name="cikiss" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />
         </StackLayout>

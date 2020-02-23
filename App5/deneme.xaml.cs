@@ -43,8 +43,8 @@ namespace App5
                    else
                       {
                       
-                    comm = $@"SELECT isim,soyisim,Sınıf from Kisiler WHERE kullaniciadi = '{username.Text}'";
-                    Dictionary<string, List<string>> datas = HelperFunctionss.Sqldeneme(comm);
+                    comm = $@"SELECT isim,soyisim,Sınıf,unvan,Personid from Kisiler WHERE kullaniciadi = '{username.Text}'";
+                    Dictionary<string, List<string>> datas = HelperFunctionss.Sqlreaderexecuter(comm);
                     
                     try
                     {
@@ -53,7 +53,9 @@ namespace App5
                             Username = username.Text,
                             Name = datas["isim"][0],
                             Surname = datas["soyisim"][0],
-                            Sinif = datas["Sınıf"][0]
+                            Sinif = datas["Sınıf"][0],
+                            Unvan = datas["unvan"][0],
+                            Id = datas["Personid"][0]
                         };
                         Settings.GeneralSettings = JsonConvert.SerializeObject(person1);
                         App5.App.Current.MainPage = new LoggedIn();

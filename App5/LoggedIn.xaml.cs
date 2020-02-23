@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,11 +16,19 @@ namespace App5
         public LoggedIn()
         {
             InitializeComponent();
+            Person person = JsonConvert.DeserializeObject<Person>(Settings.GeneralSettings);
+            if (person.Unvan == "Ogrenci") Kayit.IsVisible = true;
+            else Olustur.IsVisible = true;
         }
-        void Button1_Clicked(object sender, System.EventArgs e)
+        void DersKayit_Clicked(object sender, System.EventArgs e)
         {
             App5.App.Current.MainPage = new NavigationPage(new DersKayit());
             Navigation.PushAsync(new NavigationPage(new DersKayit()));
+        }
+        void DersOlustur_Clicked(object sender, System.EventArgs e)
+        {
+            App5.App.Current.MainPage = new NavigationPage(new DersOlustur());
+            Navigation.PushAsync(new NavigationPage(new DersOlustur()));
         }
         void Button5_Clicked(object sender, System.EventArgs e)
         {

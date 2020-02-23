@@ -10,7 +10,8 @@
 
 
             <StackLayout VerticalOptions="FillAndExpand">
-            <Button Text="Ders Kayit" Clicked="Button1_Clicked" />
+            <Button x:Name="Kayit" IsVisible="False" Text="Ders Kayit" Clicked="DersKayit_Clicked" />
+            <Button x:Name="Olustur" IsVisible="False" Text="Ders Olustur" Clicked="DersOlustur_Clicked" />
             </StackLayout>
             <Button x:Name="cikiss" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />
 
