@@ -7,14 +7,11 @@
              x:Class="App5.LoggedIn">
     <ContentPage.Content>
         <StackLayout>
-
-
             <StackLayout VerticalOptions="FillAndExpand">
             <Button x:Name="Kayit" IsVisible="False" Text="Ders Kayit" Clicked="DersKayit_Clicked" />
             <Button x:Name="Olustur" IsVisible="False" Text="Ders Olustur" Clicked="DersOlustur_Clicked" />
             </StackLayout>
             <Button x:Name="cikiss" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

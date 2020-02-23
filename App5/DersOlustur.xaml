@@ -18,7 +18,7 @@
                     IsEnabled="false"
         Title="Bir Hoca Seçiniz"
         TitleColor="Red"/>
-                <DatePicker x:Name="Tarih" IsEnabled="False" Format="D"
+                <DatePicker x:Name="Tarih" IsEnabled="True" Format="D"
                  VerticalOptions="CenterAndExpand" DateSelected="Gun_SelectedIndexChanged"/>
                 <Picker x:Name="Saat"
                     IsEnabled="false"
