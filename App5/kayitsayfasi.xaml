@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App5.Kayitsayfasi">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lusername" Text="Kullanici Adi: " VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="username" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lpass" Text="Sifre" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="pass" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lpass2" Text="Sifre Tekrar" IsVisible = "True"  VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="pass2" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lisim" Text="Isim" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="isim" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lsoyisim" Text="Soyisim" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="soyisim" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lemail" Text="E-Mail" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="email" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="25"/>
+            <Label x:Name="lsinif" Text="Sinif" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="sinif" IsVisible = "True" Keyboard="Numeric" VerticalOptions="Start" Text="10" MaxLength="2"/>
+            <Button x:Name="kayito"   Text="Kayit Ol" IsVisible = "True" Clicked="Button2_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

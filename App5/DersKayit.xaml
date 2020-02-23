@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App5.DersKayit">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+                
+                <Picker x:Name="Brans"
+         IsEnabled="true"
+        Title="Bir Brans Secin"
+        TitleColor="Red"
+        SelectedIndexChanged="Brans_SelectedIndexChanged"/>
+                <Picker x:Name="Hocalar"
+                    IsEnabled="false"
+        Title="Bir Hoca Secin"
+        TitleColor="Red"
+        SelectedIndexChanged="Hocalar_SelectedIndexChanged"/>
+                <Picker x:Name="Gun"
+                    IsEnabled="false"
+        Title="Gun Secin"
+        TitleColor="Red"
+        SelectedIndexChanged="Gun_SelectedIndexChanged"/>
+                <Button x:Name="Ara" IsVisible="True"  Text="Ara" Clicked="Button7_Clicked" />
+                <Grid x:Name="Grid" IsVisible="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                <Label Text="" Grid.Row="0" Grid.Column="0" />
+                    <Label x:Name="l105000" Text="10:50:00" Grid.Row="1" Grid.Column="0" />
+                    <Label x:Name="l111000" Text="11:10:00" Grid.Row="2" Grid.Column="0" />
+                    <Label x:Name="l130000" Text="13:00:00" Grid.Row="3" Grid.Column="0" />
+                    <Label x:Name="l133000" Text="13:30:00" Grid.Row="4" Grid.Column="0" />
+                    <Label x:Name="l140000" Text="14:00:00" Grid.Row="5" Grid.Column="0" />
+                    <Label x:Name="l143000" Text="14:30:00" Grid.Row="6" Grid.Column="0" />
+                    <Label x:Name="l170000" Text="17:00:00" Grid.Row="7" Grid.Column="0" />
+                    <Label x:Name="l173000" Text="17:30:00" Grid.Row="8" Grid.Column="0" />
+                    <Button x:Name="b105000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="1" Grid.Column="1"/>
+                    <Button x:Name="b111000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="2" Grid.Column="1"/>
+                    <Button x:Name="b130000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="3" Grid.Column="1"/>
+                    <Button x:Name="b133000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="4" Grid.Column="1"/>
+                    <Button x:Name="b140000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="5" Grid.Column="1"/>
+                    <Button x:Name="b143000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="6" Grid.Column="1"/>
+                    <Button x:Name="b170000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="7" Grid.Column="1"/>
+                    <Button x:Name="b173000" IsVisible="False"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="8" Grid.Column="1"/>
+                    <Label x:Name="DersGunu" Text="" Grid.Row="0" Grid.Column="1" />
+                </Grid>
+            </StackLayout>
+            <Button x:Name="geri" IsVisible="True"  Text="Ana Menu" Clicked="Button6_Clicked" />
+            <Button x:Name="cikiss" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
