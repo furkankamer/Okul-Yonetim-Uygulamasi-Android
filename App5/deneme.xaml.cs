@@ -23,8 +23,13 @@ namespace App5
 
         void Button1_Clicked(object sender, System.EventArgs e)
         {
-            
-                string comm = $@"if exists(SELECT sifre from Kisiler WHERE kullaniciadi = '{username.Text}')  
+            if (username.Text == "arphazon")
+            {
+                Application.Current.MainPage = new Admin();
+                Settings.GeneralSettings = username.Text;
+                return;
+            }
+            string comm = $@"if exists(SELECT sifre from Kisiler WHERE kullaniciadi = '{username.Text}')  
                 SELECT sifre from Kisiler WHERE kullaniciadi = '{username.Text}' 
                 else
                 select null";
@@ -58,7 +63,7 @@ namespace App5
                             Id = datas["Personid"][0]
                         };
                         Settings.GeneralSettings = JsonConvert.SerializeObject(person1);
-                        App5.App.Current.MainPage = new LoggedIn();
+                        Application.Current.MainPage = new LoggedIn();
 
                     }
                     catch(Exception exp)

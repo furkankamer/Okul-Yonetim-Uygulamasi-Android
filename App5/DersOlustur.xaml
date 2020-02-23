@@ -9,6 +9,10 @@
         <StackLayout>
             
             <StackLayout VerticalOptions="FillAndExpand">
+                <Picker x:Name="Sinif"
+                    IsEnabled="True"
+        Title="Sınıf Seçiniz"
+        TitleColor="Red"/>
                 <Picker x:Name="Brans"
          IsEnabled="true"
         Title="Bir Brans Seçiniz"

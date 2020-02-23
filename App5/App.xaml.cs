@@ -10,18 +10,9 @@ namespace App5
             InitializeComponent();
             
             if(Settings.GeneralSettings == string.Empty)
-            {
-
                 MainPage = new MainPage();
-                
-            }
             else
-            {
-                
                 MainPage = new LoggedIn();
-                MainPage.DisplayAlert("Alert", Settings.GeneralSettings, "OK");
-            }
-            
         }
 
         protected override void OnStart()

@@ -22,18 +22,18 @@ namespace App5
         }
         void DersKayit_Clicked(object sender, System.EventArgs e)
         {
-            App5.App.Current.MainPage = new NavigationPage(new DersKayit());
+            Application.Current.MainPage = new NavigationPage(new DersKayit());
             Navigation.PushAsync(new NavigationPage(new DersKayit()));
         }
         void DersOlustur_Clicked(object sender, System.EventArgs e)
         {
-            App5.App.Current.MainPage = new NavigationPage(new DersOlustur());
+            Application.Current.MainPage = new NavigationPage(new DersOlustur());
             Navigation.PushAsync(new NavigationPage(new DersOlustur()));
         }
         void Button5_Clicked(object sender, System.EventArgs e)
         {
             Settings.GeneralSettings = string.Empty;
-            App5.App.Current.MainPage = new MainPage();
+            Application.Current.MainPage = new MainPage();
         }
         
 

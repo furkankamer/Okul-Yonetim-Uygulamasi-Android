@@ -7,54 +7,8 @@
              x:Class="App5.MainPage">
 
     <StackLayout>
-
         <Button x:Name="giriss" IsVisible="false" Text="Giris" Clicked="Button3_Clicked" />
         <Button x:Name="kayitt" IsVisible="false"  Text="Kayit" Clicked="Button4_Clicked" />
-        <Grid x:Name="Grid" IsVisible="True">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Label Text="Mizrak" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
-            <Entry x:Name="mizrak" Keyboard="Numeric" Text="10" MaxLength="5" Grid.Row="0" Grid.Column="1"/>
-            <Label Text="Kilic" FontSize="Medium" Grid.Row="1" Grid.Column="0"/>
-            <Entry x:Name="kilic" Keyboard="Numeric" Text="10" MaxLength="5" Grid.Row="1" Grid.Column="1"/>
-            <Label Text="Mizrak Sonuc:" FontSize="Medium" Grid.Row="2" Grid.Column="0"/>
-            <Entry x:Name="mizrak1" Placeholder="" IsReadOnly="true" Grid.Row="2" Grid.Column="1"/>
-            <Label Text="Kilic Sonuc:" FontSize="Medium" Grid.Row="3" Grid.Column="0"/>
-            <Entry x:Name="kilic1" Placeholder="" IsReadOnly="true" Grid.Row="3" Grid.Column="1"/>
-         </Grid>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="2'li Hesapla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="ikili"  IsChecked="false" CheckedChanged="OnToggled" />
-            <Label x:Name="lbirden" Text="1'den Basla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="birden"  IsChecked="false" CheckedChanged="OnToggled3" />
-            <Label x:Name="likiden" Text="2'den Basla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="ikiden"  IsChecked="false" CheckedChanged="OnToggled4" />
-            <Label x:Name="lucden" Text="3'den Hesapla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="ucden"  IsChecked="false" CheckedChanged="OnToggled5" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="3'lu Hesapla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="uclu"  IsChecked="false" CheckedChanged="OnToggled1" />
-            <Label x:Name="lbirden2" Text="1'den Basla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="birden2"  IsChecked="false" CheckedChanged="OnToggled3" />
-            <Label x:Name="likiden2" Text="2'den Hesapla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="ikiden2"  IsChecked="false" CheckedChanged="OnToggled4" />
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="4'lü Hesapla" VerticalOptions="Start" FontSize="Small"/>
-            <CheckBox x:Name="dortlu"  IsChecked="false" CheckedChanged="OnToggled2" />
-        </StackLayout>
-        <Button Text="Hesapla" Clicked="Button_Clicked" />
-        <Button Text="Wifi Kapat" Clicked="Button1_Clicked" />
-        <Button Text="Wifi Aç" Clicked="Button2_Clicked" />
     </StackLayout>
 
 </ContentPage>

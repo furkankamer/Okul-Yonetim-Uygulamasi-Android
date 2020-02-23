@@ -18,10 +18,12 @@ namespace App5
             Tarih.MinimumDate = DateTime.Now.AddDays((8 - DateTime.Today.DayOfWeek - DayOfWeek.Sunday));
             Tarih.MaximumDate = DateTime.Now.AddDays((8 - DateTime.Today.DayOfWeek - DayOfWeek.Sunday)).AddDays(5);
             string[] branslar = new string[] { "Edebiyat", "Turkce", "Matematik", "Fizik", "Kimya", "Biyoloji", "Ingilizce" };
+            string[] siniflar = { "9", "10", "11", "12" };
             foreach (string brans in branslar)
-            {
                 Brans.Items.Add(brans);
-            }
+            foreach (string sinif in siniflar)
+                Sinif.Items.Add(sinif);
+            
         }
 
         void Brans_SelectedIndexChanged(object sender, System.EventArgs e)
@@ -61,14 +63,14 @@ namespace App5
         }
         void Ders_Olustur(object sender, System.EventArgs e)
         {
-            if(Hocalar.SelectedIndex != -1 && Brans.SelectedIndex != -1 && Tarih.Date.ToString() != "" && Saat.SelectedIndex != -1)
+            if(Sinif.SelectedIndex != -1 && Hocalar.SelectedIndex != -1 && Brans.SelectedIndex != -1 && Tarih.Date.ToString() != "" && Saat.SelectedIndex != -1)
             {
                 string Gun = Hangi_gun();
                 string tarih = Tarih.Date.ToString("yyyy - MM - dd ");
                 string hocaid = $"select Hoca_id from Hocalar where isim = '{Hocalar.SelectedItem.ToString()}'";
                 hocaid = HelperFunctionss.SqlExecuter(hocaid, 2);
-                string yenidersekle = $"insert into Dersler (DersGünü,DersAdi,date2,hoca_id,quota,enrolled)" +
-                    $"values('{Gun}','{Brans.SelectedItem.ToString()}','{tarih}','{hocaid}','1','0')";
+                string yenidersekle = $"insert into Dersler (Sinif,DersGünü,DersAdi,date2,hoca_id,quota,enrolled)" +
+                    $"values('{Sinif.SelectedItem.ToString()}','{Gun}','{Brans.SelectedItem.ToString()}','{tarih + Saat.SelectedItem.ToString()}','{hocaid}','1','0')";
                 if (HelperFunctionss.SqlExecuter(yenidersekle, 0) == "null")
                     DisplayAlert("Hata!", "Lütfen ders programını kontrol ediniz", "Tamam");
             }
