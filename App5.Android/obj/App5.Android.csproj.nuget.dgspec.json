@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\furka\\source\\repos\\App5\\App5.Android\\App5.Android.csproj": {}
+    "C:\\Users\\furka\\Desktop\\app5\\App5.Android\\App5.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\furka\\source\\repos\\App5\\App5.Android\\App5.Android.csproj": {
+    "C:\\Users\\furka\\Desktop\\app5\\App5.Android\\App5.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\App5\\App5.Android\\App5.Android.csproj",
+        "projectUniqueName": "C:\\Users\\furka\\Desktop\\app5\\App5.Android\\App5.Android.csproj",
         "projectName": "App5.Android",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\App5\\App5.Android\\App5.Android.csproj",
+        "projectPath": "C:\\Users\\furka\\Desktop\\app5\\App5.Android\\App5.Android.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\App5\\App5.Android\\obj\\",
+        "outputPath": "C:\\Users\\furka\\Desktop\\app5\\App5.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj": {
-                "projectPath": "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj"
+              "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj": {
+                "projectPath": "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj": {
+    "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj",
+        "projectUniqueName": "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj",
         "projectName": "App5",
-        "projectPath": "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj",
+        "projectPath": "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\source\\repos\\App5\\App5\\obj\\",
+        "outputPath": "C:\\Users\\furka\\Desktop\\app5\\App5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

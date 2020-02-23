@@ -1623,11 +1623,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\furka\\source\\repos\\App5\\App5.iOS\\App5.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\furka\\Desktop\\app5\\App5.iOS\\App5.iOS.csproj",
       "projectName": "App5.iOS",
-      "projectPath": "C:\\Users\\furka\\source\\repos\\App5\\App5.iOS\\App5.iOS.csproj",
+      "projectPath": "C:\\Users\\furka\\Desktop\\app5\\App5.iOS\\App5.iOS.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\furka\\source\\repos\\App5\\App5.iOS\\obj\\",
+      "outputPath": "C:\\Users\\furka\\Desktop\\app5\\App5.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1650,8 +1650,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj": {
-              "projectPath": "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj"
+            "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj": {
+              "projectPath": "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj"
             }
           }
         }

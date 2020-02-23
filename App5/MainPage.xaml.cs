@@ -1,20 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.Common;
 using Xamarin.Forms;
 using Android.Net.Wifi;
-using Android.App;
-using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-using System.Data.SqlClient;
-using Switch = Xamarin.Forms.Switch;
 using CheckBox = Xamarin.Forms.CheckBox;
 
 namespace App5
@@ -42,6 +29,20 @@ namespace App5
 
         }
 
+        void Double_inserter(double[] katsayilar,double nmizrak,double nkilic,string mizrak,string kilic)
+        {
+            mizrak += Math.Round(nmizrak).ToString() + "|";
+            kilic += Math.Round(nkilic).ToString() + "|";
+            foreach (double c in katsayilar)
+            {
+                nmizrak *= c;
+                nkilic *= c;
+                mizrak += Math.Round(nmizrak).ToString() + "|";
+                kilic += Math.Round(nkilic).ToString() + "|";
+            }
+            mizrak1.Text = mizrak;
+            kilic1.Text = kilic;
+        }
         void Button_Clicked(object sender, System.EventArgs e)
         {
             if(ikili.IsChecked)
@@ -71,17 +72,7 @@ namespace App5
                     kil /= 1.6666;
                     katsayilar[0] = 0.6666;
                 }
-                a += Math.Round(miz).ToString() + "|";
-                b += Math.Round(kil).ToString() + "|";
-                foreach (double c in katsayilar)
-                {
-                    miz *= c;
-                    kil *= c;
-                    a += Math.Round(miz).ToString() + "|";
-                    b += Math.Round(kil).ToString() + "|";
-                }
-                mizrak1.Text = a;
-                kilic1.Text = b;
+                Double_inserter(katsayilar,miz,kil,a,b);
             }
             else if(uclu.IsChecked)
             {
@@ -106,17 +97,7 @@ namespace App5
                     katsayilar[0] = 0.5;
                     katsayilar[1] = 0.333;
                 }
-                a += Math.Round(miz).ToString() + "|";
-                b += Math.Round(kil).ToString() + "|";
-                foreach (double c in katsayilar)
-                {
-                    miz *= c;
-                    kil *= c;
-                    b += Math.Round(kil).ToString() + "|";
-                    a += Math.Round(miz).ToString() + "|";
-                }
-                mizrak1.Text = a;
-                kilic1.Text = b;
+                Double_inserter(katsayilar, miz, kil, a, b);
             }
 
             else if(dortlu.IsChecked)
@@ -130,17 +111,7 @@ namespace App5
                 b = string.Empty;
                 miz /= 1.732;
                 kil /= 1.732;
-                a += Math.Round(miz).ToString() + "|";
-                b += Math.Round(kil).ToString() + "|";
-                foreach (double c in katsayilar)
-                {
-                    miz *= c;
-                    kil *= c;
-                    b += Math.Round(kil).ToString() + "|";
-                    a += Math.Round(miz).ToString() + "|";
-                }
-                mizrak1.Text = a;
-                kilic1.Text = b;
+                Double_inserter(katsayilar, miz, kil, a, b);
             }
 
             

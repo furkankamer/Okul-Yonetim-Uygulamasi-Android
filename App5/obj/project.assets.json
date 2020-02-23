@@ -1477,11 +1477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj",
+      "projectUniqueName": "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj",
       "projectName": "App5",
-      "projectPath": "C:\\Users\\furka\\source\\repos\\App5\\App5\\App5.csproj",
+      "projectPath": "C:\\Users\\furka\\Desktop\\app5\\App5\\App5.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\furka\\source\\repos\\App5\\App5\\obj\\",
+      "outputPath": "C:\\Users\\furka\\Desktop\\app5\\App5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
