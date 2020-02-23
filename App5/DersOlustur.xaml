@@ -17,14 +17,14 @@
                 <Picker x:Name="Hocalar"
                     IsEnabled="false"
         Title="Bir Hoca Seçiniz"
-        TitleColor="Red"
-        SelectedIndexChanged="Hocalar_SelectedIndexChanged"/>
-                <Picker x:Name="Gun"
+        TitleColor="Red"/>
+                <DatePicker x:Name="Tarih" IsEnabled="False" Format="D"
+                 VerticalOptions="CenterAndExpand" DateSelected="Gun_SelectedIndexChanged"/>
+                <Picker x:Name="Saat"
                     IsEnabled="false"
-        Title="Gün Seçiniz"
+        Title="Saat Seçiniz"
         TitleColor="Red"/>
                 <Button x:Name="Olustur" IsVisible="True"  Text="Olustur" Clicked="Ders_Olustur" />
-                
             </StackLayout>
             <Button x:Name="geri" IsVisible="True"  Text="Ana Menu" Clicked="Button6_Clicked" />
             <Button x:Name="cikiss" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />

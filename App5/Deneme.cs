@@ -63,48 +63,33 @@ namespace App5
             {
                 conne.ConnectionString = Configuration.ConnectionString;
                 conne.Open();
-            
-            using (SqlCommand a = new SqlCommand(commstring, conne))
-            {
-                if (type1 == 0)
+
+                using (SqlCommand a = new SqlCommand(commstring, conne))
                 {
+
                     try
                     {
-                        a.ExecuteNonQuery();
-                        return "";
+                        if (type1 == 0)
+                        {
+                            a.ExecuteNonQuery();
+                            conne.Close();
+                            return "";
+                        }
+                        else
+                        {
+                            var obj = a.ExecuteScalar();
+                            conne.Close();
+                            return obj.ToString();
+                        }
                     }
                     catch
                     {
+                        conne.Close();
                         return "null";
                     }
 
-
                 }
-
-                else 
-                {
-                    try
-                        {
-                            var obj = a.ExecuteScalar();
-                            if (obj == DBNull.Value)
-                            {
-                                return "null";
-                            }
-                            else
-                            {
-                                return obj.ToString();
-                            }
-                        }
-                        catch(Exception exp)
-                        {
-                            App5.App.Current.MainPage.DisplayAlert("okk", exp.Message + "\n" + commstring, "okk");
-                            return "null";
-                        }
-                    
-                }
-
             }
-        }
         }
     }
 }
