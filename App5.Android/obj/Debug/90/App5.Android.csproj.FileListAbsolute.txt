@@ -1092,3 +1092,4 @@ C:\Users\furka\Desktop\app5\App5.Android\obj\Debug\90\stamp\_CopyPdbFiles.stamp
 C:\Users\furka\Desktop\app5\App5.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\furka\Desktop\app5\App5.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\furka\Desktop\app5\App5.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\furka\Desktop\app5\App5.Android\obj\Debug\90\res\drawable\castle.jpg

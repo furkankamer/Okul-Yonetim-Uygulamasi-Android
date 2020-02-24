@@ -32,15 +32,19 @@ namespace App5
             string[] buttonnames = new string[] { "b105000", "b111000", "b130000", "b133000", "b140000", "b143000", "b170000", "b173000" };
             foreach(string bname in buttonnames)
             {
+                string lname = bname.Replace("b", "l");
+                string rname = bname.Replace("b", "r");
                 Grid.FindByName<Button>(bname).IsVisible = false;
+                Grid.FindByName<Label>(lname).IsVisible = false;
+                Grid.FindByName<RowDefinition>(rname).Height = 0;
             }
         }
 
         void Brans_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            string comm = $@"SELECT DersHocasi from Dersler WHERE DersAdi = '{Brans.SelectedItem.ToString()}'";
+            string comm = $@"SELECT isim from Hocalar WHERE Brans = '{Brans.SelectedItem.ToString()}'";
             Dictionary<string, List<string>> names = HelperFunctionss.Sqlreaderexecuter(comm);
-            HelperFunctionss.Pickeradjuster(Hocalar, names,"DersHocasi");
+            HelperFunctionss.Pickeradjuster(Hocalar, names,"isim");
             Gun.SelectedIndex = -1;     
             Gun.Items.Clear();
             Gun.IsEnabled = false;
@@ -50,10 +54,11 @@ namespace App5
         {
                 if(Hocalar.SelectedIndex != -1)
             {
-                
+                string hocaid = $"select Hoca_id from Hocalar where isim = '{Hocalar.SelectedItem.ToString()}'";
+                hocaid = HelperFunctionss.SqlExecuter(hocaid, 1);
                 string comm = $@"SELECT DersGünü from Dersler 
                 WHERE DersAdi = '{Brans.SelectedItem.ToString()}' 
-                and DersHocasi = '{Hocalar.SelectedItem.ToString()}'";
+                and hoca_id = '{hocaid}'";
                 Dictionary<string, List<string>> names = HelperFunctionss.Sqlreaderexecuter(comm);
                 HelperFunctionss.Pickeradjuster(Gun, names, "DersGünü");
                 Grid.IsVisible = false;
@@ -79,33 +84,38 @@ namespace App5
             {
                 try
                 {
+                    string hocaid = $"select Hoca_id from Hocalar where isim = '{Hocalar.SelectedItem.ToString()}'";
+                    hocaid = HelperFunctionss.SqlExecuter(hocaid, 1);
                     string comm = $@"SELECT cast(date2 as time(0))[date2] from Dersler 
                     WHERE DersAdi = '{Brans.SelectedItem.ToString()}' 
-                    and DersHocasi = '{Hocalar.SelectedItem.ToString()}' 
+                    and hoca_id = '{hocaid}' 
                     and DersGünü = '{Gun.SelectedItem.ToString()}'";
                     Dictionary<string, List<string>> table = HelperFunctionss.Sqlreaderexecuter(comm);
                     Person person1 = JsonConvert.DeserializeObject<Person>(Settings.GeneralSettings);
-                    comm = $@"SELECT Personid from Kisiler where kullaniciadi = '{person1.Username}'";
-                    string studid = HelperFunctionss.SqlExecuter(comm, 1);
                     comm = $@"SELECT cast(Dersler.date2 as time(0))[date2]
                               FROM Dersler
                               INNER JOIN derskayit ON Dersler.Ders_ID = derskayit.ders_id
-                              where derskayit.student_id = '{studid}' AND Dersler.DersAdi = '{Brans.SelectedItem.ToString()}' 
-                              and Dersler.DersHocasi = '{Hocalar.SelectedItem.ToString()}' 
+                              where derskayit.student_id = '{person1.Id}' AND Dersler.DersAdi = '{Brans.SelectedItem.ToString()}' 
+                              and hoca_id = '{hocaid}' 
                               and DersGünü = '{Gun.SelectedItem.ToString()}';";
                     Dictionary<string, List<string>> kayitlitimes = HelperFunctionss.Sqlreaderexecuter(comm);
-                    
+
                     DersGunu.Text = Gun.SelectedItem.ToString();
                     Grid.IsVisible = true;
-
-                    foreach(string row in table["date2"])
+                    string rows = string.Empty;
+                    foreach (string row in table["date2"])
                     {
-                        if(!(kayitlitimes["date2"].Contains(row)))
+                        string bname = "b" + row.Replace(":", "");
+                        string lname = "l" + row.Replace(":", "");
+                        string rname = "r" + row.Replace(":", "");
+                        if (!(kayitlitimes["date2"].Contains(row)))
                         {
-                            string bname = "b" + row.Replace(":", "");
                             try
                             {
                                 Grid.FindByName<Button>(bname).IsVisible = true;
+                                Grid.FindByName<Label>(lname).IsVisible = true;
+                                Grid.FindByName<RowDefinition>(rname).Height = GridLength.Star;
+                                rows += row + "";
                             }
                             catch
                             {
@@ -113,12 +123,11 @@ namespace App5
                             }
                         }
                     }
-
                 }
 
-                catch(Exception exx)
+                catch (Exception exx)
                 {
-                    DisplayAlert("alert", exx.ToString(),"ok");
+                    DisplayAlert("alert", exx.ToString(), "ok");
                 }
 
             }

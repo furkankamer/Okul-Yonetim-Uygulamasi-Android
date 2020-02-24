@@ -24,7 +24,7 @@ namespace App5
             if (App5.HelperFunctionss.SqlExecuter(sqlcomm, 0) != "null")
             {
                 DisplayAlert("Alert", "Kayit Basarili", "OK");
-                App5.App.Current.MainPage = new Deneme();
+                App5.App.Current.MainPage = new Giris();
             }
             else
             {

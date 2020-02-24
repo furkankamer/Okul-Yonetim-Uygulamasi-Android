@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App5.Giris">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lusername" Text="Kullanici Adi: " VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="username" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lpass" Text="Sifre" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="pass" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Button x:Name="girisy" Text="Giris Yap" IsVisible = "True" Clicked="Button1_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

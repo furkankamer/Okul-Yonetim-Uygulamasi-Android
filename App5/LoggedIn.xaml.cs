@@ -16,6 +16,11 @@ namespace App5
         public LoggedIn()
         {
             InitializeComponent();
+            if (Settings.GeneralSettings == "arphazon")
+            {
+                Application.Current.MainPage = new Admin();
+                return;
+            }
             Person person = JsonConvert.DeserializeObject<Person>(Settings.GeneralSettings);
             if (person.Unvan == "Ogrenci") Kayit.IsVisible = true;
             else Olustur.IsVisible = true;

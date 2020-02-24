@@ -27,7 +27,7 @@ namespace App5
         }
         void Button3_Clicked(object sender, System.EventArgs e)
         {
-            App5.App.Current.MainPage = new Deneme();
+            App5.App.Current.MainPage = new Giris();
         }
         void Button4_Clicked(object sender, System.EventArgs e)
         {

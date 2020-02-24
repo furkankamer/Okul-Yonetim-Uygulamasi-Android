@@ -30,7 +30,6 @@ C:\Users\furka\Desktop\app5\App5\bin\Debug\netstandard2.0\Mono.Android.pdb
 C:\Users\furka\Desktop\app5\App5\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\App5.csprojAssemblyReference.cache
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\deneme.xaml.g.cs
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\DersKayit.xaml.g.cs
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\DersOlustur.xaml.g.cs
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\kayitsayfasi.xaml.g.cs
@@ -45,3 +44,4 @@ C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\App5.dll
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\ref\App5.dll
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\App5.pdb
 C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\Admin.xaml.g.cs
+C:\Users\furka\Desktop\app5\App5\obj\Debug\netstandard2.0\giris.xaml.g.cs
