@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App5.HaftalıkProgram">
+             x:Class="App5.HaftalikProgram">
     <Page.Resources>
         <Style TargetType="Button">
             <Setter Property="BackgroundColor" Value="#500000"/>

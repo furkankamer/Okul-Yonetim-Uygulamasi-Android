@@ -42,8 +42,8 @@ namespace App5
         }
         void DersProgrami_Clicked(object sender, System.EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new HaftalıkProgram());
-            Navigation.PushAsync(new NavigationPage(new HaftalıkProgram()));
+            Application.Current.MainPage = new NavigationPage(new HaftalikProgram());
+            Navigation.PushAsync(new NavigationPage(new HaftalikProgram()));
         }
 
     }

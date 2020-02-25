@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App5
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HaftalıkProgram : ContentPage
+    public partial class HaftalikProgram : ContentPage
     {
-        public HaftalıkProgram()
+        public HaftalikProgram()
         {
             InitializeComponent();
         }
