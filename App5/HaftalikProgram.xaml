@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App5.HaftalikProgram">
+             x:Class="App5.HaftalikProgram"
+             BackgroundImageSource="castle.jpg">
     <Page.Resources>
         <Style TargetType="Button">
             <Setter Property="BackgroundColor" Value="#500000"/>
@@ -22,6 +23,8 @@
         <Style TargetType="Grid" >
             <Setter Property="BackgroundColor" Value="#005000"/>
             <Setter Property="Opacity" Value="0.89"/>
+            <Setter Property="RowSpacing" Value="1"/>
+            <Setter Property="ColumnSpacing" Value="1"/>
         </Style>
         <Style TargetType="Picker">
             <Setter Property="BackgroundColor" Value="#500000"/>
