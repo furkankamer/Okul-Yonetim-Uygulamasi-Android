@@ -16,14 +16,12 @@
             <Setter Property="BackgroundColor" Value="#005000"/>
             <Setter Property="Opacity" Value="0.9"/>
             <Setter Property="TextColor" Value="WhiteSmoke"/>
-            <Setter Property="IsVisible" Value="False"/>
-            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="FontSize" Value="Micro"/>
             <Setter Property="VerticalTextAlignment" Value="Center"/>
         </Style>
         <Style TargetType="Grid" >
             <Setter Property="BackgroundColor" Value="#005000"/>
             <Setter Property="Opacity" Value="0.89"/>
-            <Setter Property="IsVisible" Value="False"/>
         </Style>
         <Style TargetType="Picker">
             <Setter Property="BackgroundColor" Value="#500000"/>
