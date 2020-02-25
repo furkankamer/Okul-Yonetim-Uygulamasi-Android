@@ -30,6 +30,9 @@
     <Compile Update="giris.xaml.cs">
       <DependentUpon>giris.xaml</DependentUpon>
     </Compile>
+    <Compile Update="HaftalikProgram.xaml.cs">
+      <DependentUpon>HaftalikProgram.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +46,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DersOlustur.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HaftalikProgram.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="kayitsayfasi.xaml">
