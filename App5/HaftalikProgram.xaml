@@ -36,14 +36,14 @@
             <Grid x:Name="Grid">
                 <Grid.RowDefinitions>
                     <RowDefinition x:Name="r1" Height="*" />
-                    <RowDefinition x:Name="r105000"  Height="0" />
-                    <RowDefinition x:Name="r111000"  Height="0" />
-                    <RowDefinition x:Name="r130000"  Height="0" />
-                    <RowDefinition x:Name="r133000"  Height="0" />
-                    <RowDefinition x:Name="r140000"  Height="0" />
-                    <RowDefinition x:Name="r143000"  Height="0" />
-                    <RowDefinition x:Name="r170000"  Height="0" />
-                    <RowDefinition x:Name="r173000"  Height="0" />
+                    <RowDefinition x:Name="r105000"  Height="*" />
+                    <RowDefinition x:Name="r111000"  Height="*" />
+                    <RowDefinition x:Name="r130000"  Height="*" />
+                    <RowDefinition x:Name="r133000"  Height="*" />
+                    <RowDefinition x:Name="r140000"  Height="*" />
+                    <RowDefinition x:Name="r143000"  Height="*" />
+                    <RowDefinition x:Name="r170000"  Height="*" />
+                    <RowDefinition x:Name="r173000"  Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -71,12 +71,12 @@
                 <Button x:Name="b143000" FontSize="Small"  Text="Seç" Grid.Row="6" Grid.Column="1"/>
                 <Button x:Name="b170000" FontSize="Small"  Text="Seç" Grid.Row="7" Grid.Column="1"/>
                 <Button x:Name="b173000" FontSize="Small"  Text="Seç" Grid.Row="8" Grid.Column="1"/>
-                <Label IsVisible="True" Text="Pazartesi" Grid.Row="0" Grid.Column="1" />
-                <Label IsVisible="True" Text="Salı" Grid.Row="0" Grid.Column="2" />
-                <Label IsVisible="True" Text="Çarşamba" Grid.Row="0" Grid.Column="3" />
-                <Label IsVisible="True" Text="Perşembe" Grid.Row="0" Grid.Column="4" />
-                <Label IsVisible="True" Text="Cuma" Grid.Row="0" Grid.Column="5" />
-                <Label IsVisible="True" Text="Cumartesi" Grid.Row="0" Grid.Column="6" />
+                <Label x:Name="Pazartesi" IsVisible="True" Text="Pazartesi" Grid.Row="0" Grid.Column="1" />
+                <Label x:Name="Salı" IsVisible="True" Text="Salı" Grid.Row="0" Grid.Column="2" />
+                <Label x:Name="Çarşamba" IsVisible="True" Text="Çarşamba" Grid.Row="0" Grid.Column="3" />
+                <Label x:Name="Persembe" IsVisible="True" Text="Perşembe" Grid.Row="0" Grid.Column="4" />
+                <Label x:Name="Cuma" IsVisible="True" Text="Cuma" Grid.Row="0" Grid.Column="5" />
+                <Label x:Name="Cumartesi" IsVisible="True" Text="Cumartesi" Grid.Row="0" Grid.Column="6" />
                 </Grid>
         </StackLayout>
         <Button x:Name="geri" IsVisible="True"   Text="Ana Menu" Clicked="Button6_Clicked" />
