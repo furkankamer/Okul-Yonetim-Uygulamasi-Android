@@ -40,7 +40,11 @@ namespace App5
             Settings.GeneralSettings = string.Empty;
             Application.Current.MainPage = new MainPage();
         }
-        
+        void DersProgrami_Clicked(object sender, System.EventArgs e)
+        {
+            Application.Current.MainPage = new NavigationPage(new HaftalıkProgram());
+            Navigation.PushAsync(new NavigationPage(new HaftalıkProgram()));
+        }
 
     }
 }

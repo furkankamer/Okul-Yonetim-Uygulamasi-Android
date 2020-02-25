@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App5.HaftalıkProgram">
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#500000"/>
+            <Setter Property="Opacity" Value="0.9"/>
+            <Setter Property="TextColor" Value="WhiteSmoke"/>
+            <Setter Property="IsVisible" Value="False"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="BackgroundColor" Value="#005000"/>
+            <Setter Property="Opacity" Value="0.9"/>
+            <Setter Property="TextColor" Value="WhiteSmoke"/>
+            <Setter Property="IsVisible" Value="False"/>
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Grid" >
+            <Setter Property="BackgroundColor" Value="#005000"/>
+            <Setter Property="Opacity" Value="0.89"/>
+            <Setter Property="IsVisible" Value="False"/>
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="BackgroundColor" Value="#500000"/>
+            <Setter Property="Opacity" Value="0.9"/>
+            <Setter Property="TextColor" Value="WhiteSmoke"/>
+            <Setter Property="TitleColor" Value="WhiteSmoke"/>
+        </Style>
+    </Page.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand">
+            <Grid x:Name="Grid">
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="r1" Height="*" />
+                    <RowDefinition x:Name="r105000"  Height="0" />
+                    <RowDefinition x:Name="r111000"  Height="0" />
+                    <RowDefinition x:Name="r130000"  Height="0" />
+                    <RowDefinition x:Name="r133000"  Height="0" />
+                    <RowDefinition x:Name="r140000"  Height="0" />
+                    <RowDefinition x:Name="r143000"  Height="0" />
+                    <RowDefinition x:Name="r170000"  Height="0" />
+                    <RowDefinition x:Name="r173000"  Height="0" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="" Grid.Row="0" IsVisible="True" Grid.Column="0" />
+                <Label x:Name="l105000" Text="10:50:00" Grid.Row="1" Grid.Column="0" />
+                <Label x:Name="l111000" Text="11:10:00" Grid.Row="2" Grid.Column="0" />
+                <Label x:Name="l130000" Text="13:00:00" Grid.Row="3" Grid.Column="0" />
+                <Label x:Name="l133000" Text="13:30:00" Grid.Row="4" Grid.Column="0" />
+                <Label x:Name="l140000" Text="14:00:00" Grid.Row="5" Grid.Column="0" />
+                <Label x:Name="l143000" Text="14:30:00" Grid.Row="6" Grid.Column="0" />
+                <Label x:Name="l170000" Text="17:00:00" Grid.Row="7" Grid.Column="0" />
+                <Label x:Name="l173000" Text="17:30:00" Grid.Row="8" Grid.Column="0" />
+                <Button x:Name="b105000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="1" Grid.Column="1"/>
+                <Button x:Name="b111000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="2" Grid.Column="1"/>
+                <Button x:Name="b130000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="3" Grid.Column="1"/>
+                <Button x:Name="b133000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="4" Grid.Column="1"/>
+                <Button x:Name="b140000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="5" Grid.Column="1"/>
+                <Button x:Name="b143000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="6" Grid.Column="1"/>
+                <Button x:Name="b170000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="7" Grid.Column="1"/>
+                <Button x:Name="b173000" FontSize="Small"  Text="Seç" Clicked="Button8_Clicked" Grid.Row="8" Grid.Column="1"/>
+                <Label x:Name="DersGunu" IsVisible="True" Text="" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+        <Button x:Name="geri" IsVisible="True"   Text="Ana Menu" Clicked="Button6_Clicked" />
+        <Button x:Name="cikiss" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

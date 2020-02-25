@@ -4,24 +4,25 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App5.Kayitsayfasi">
+             x:Class="App5.Kayitsayfasi"
+             BackgroundImageSource="castle.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lusername" Text="Kullanici Adi: " VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="username" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
-            <Label x:Name="lpass" Text="Sifre" VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="pass" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
-            <Label x:Name="lpass2" Text="Sifre Tekrar" IsVisible = "True"  VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="pass2" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
-            <Label x:Name="lisim" Text="Isim" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="isim" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
-            <Label x:Name="lsoyisim" Text="Soyisim" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="soyisim" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
-            <Label x:Name="lemail" Text="E-Mail" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="email" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="25"/>
-            <Label x:Name="lsinif" Text="Sinif" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="sinif" IsVisible = "True" Keyboard="Numeric" VerticalOptions="Start" Text="10" MaxLength="2"/>
-            <Button x:Name="kayito"   Text="Kayit Ol" IsVisible = "True" Clicked="Button2_Clicked" />
+            <Label x:Name="lusername" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Kullanici Adi: " VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="username" TextColor="WhiteSmoke" BackgroundColor="#500000" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lpass" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Sifre" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="pass" TextColor="WhiteSmoke" BackgroundColor="#500000" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lpass2" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Sifre Tekrar" IsVisible = "True"  VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="pass2" TextColor="WhiteSmoke" BackgroundColor="#500000" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lisim" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Isim" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="isim" TextColor="WhiteSmoke" BackgroundColor="#500000" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lsoyisim" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Soyisim" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="soyisim" TextColor="WhiteSmoke" BackgroundColor="#500000" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lemail" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="E-Mail" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="email" TextColor="WhiteSmoke" BackgroundColor="#500000" IsVisible = "True" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="25"/>
+            <Label x:Name="lsinif" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Sinif" IsVisible = "True" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="sinif" TextColor="WhiteSmoke" BackgroundColor="#500000" IsVisible = "True" Keyboard="Numeric" VerticalOptions="Start" Text="10" MaxLength="2"/>
+            <Button x:Name="kayito" TextColor="WhiteSmoke" BackgroundColor="#500000"  Text="Kayit Ol" IsVisible = "True" Clicked="Button2_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

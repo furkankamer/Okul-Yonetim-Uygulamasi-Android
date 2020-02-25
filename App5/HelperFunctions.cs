@@ -82,9 +82,10 @@ namespace App5
                             return obj.ToString();
                         }
                     }
-                    catch
+                    catch(Exception exp)
                     {
                         conne.Close();
+                        Application.Current.MainPage.DisplayAlert("Alert",exp.Message, "OK");
                         return "null";
                     }
 

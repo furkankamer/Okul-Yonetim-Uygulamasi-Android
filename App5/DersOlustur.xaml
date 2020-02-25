@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App5.DersOlustur">
+             x:Class="App5.DersOlustur"
+             BackgroundImageSource="castle.jpg">
     <ContentPage.Content>
         <StackLayout>
             
@@ -30,8 +31,8 @@
         TitleColor="Red"/>
                 <Button x:Name="Olustur" IsVisible="True"  Text="Olustur" Clicked="Ders_Olustur" />
             </StackLayout>
-            <Button x:Name="geri" IsVisible="True"  Text="Ana Menu" Clicked="Button6_Clicked" />
-            <Button x:Name="cikiss" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />
+            <Button x:Name="geri" TextColor="WhiteSmoke" BackgroundColor="#500000" IsVisible="True"  Text="Ana Menu" Clicked="Button6_Clicked" />
+            <Button x:Name="cikiss" TextColor="WhiteSmoke" BackgroundColor="#500000" IsVisible="True"  Text="Cikis" Clicked="Button5_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

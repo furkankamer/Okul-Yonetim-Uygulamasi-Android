@@ -69,7 +69,7 @@ namespace App5
                 string tarih = Tarih.Date.ToString("yyyy - MM - dd ");
                 string hocaid = $"select Hoca_id from Hocalar where isim = '{Hocalar.SelectedItem.ToString()}'";
                 hocaid = HelperFunctionss.SqlExecuter(hocaid, 2);
-                string yenidersekle = $"insert into Dersler (Sinif,DersGünü,DersAdi,date2,hoca_id,quota,enrolled)" +
+                string yenidersekle = $"insert into Dersler (Sınıf,DersGünü,DersAdi,date2,hoca_id,quota,enrolled)" +
                     $"values('{Sinif.SelectedItem.ToString()}','{Gun}','{Brans.SelectedItem.ToString()}','{tarih + Saat.SelectedItem.ToString()}','{hocaid}','1','0')";
                 if (HelperFunctionss.SqlExecuter(yenidersekle, 0) == "null")
                     DisplayAlert("Hata!", "Lütfen ders programını kontrol ediniz", "Tamam");

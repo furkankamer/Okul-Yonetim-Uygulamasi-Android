@@ -4,14 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="App5.Giris">
+             x:Class="App5.Giris"
+             BackgroundImageSource="castle.jpg">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lusername" Text="Kullanici Adi: " VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="username" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
-            <Label x:Name="lpass" Text="Sifre" VerticalOptions="Start" FontSize="Large"/>
-            <Entry x:Name="pass" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
-            <Button x:Name="girisy" Text="Giris Yap" IsVisible = "True" Clicked="Button1_Clicked" />
+            <Label x:Name="lusername" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Kullanici Adi: " VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="username" TextColor="WhiteSmoke" BackgroundColor="#500000" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Label x:Name="lpass" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Sifre" VerticalOptions="Start" FontSize="Large"/>
+            <Entry x:Name="pass" TextColor="WhiteSmoke" BackgroundColor="#500000" Keyboard="Text" VerticalOptions="Start" Text="10" MaxLength="10"/>
+            <Button x:Name="girisy" TextColor="WhiteSmoke" BackgroundColor="#500000" Text="Giris Yap" IsVisible = "True" Clicked="Button1_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
