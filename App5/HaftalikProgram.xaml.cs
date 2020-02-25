@@ -21,5 +21,9 @@ namespace App5
             Settings.GeneralSettings = string.Empty;
             Application.Current.MainPage = new MainPage();
         }
+        void Button6_Clicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new LoggedIn();
+        }
     }
 }
